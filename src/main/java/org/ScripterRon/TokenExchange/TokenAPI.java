@@ -558,7 +558,7 @@ public class TokenAPI extends APIServlet.APIRequestHandler {
      *
      * @return                  TRUE if full client is required
      */
-    @Override
+    //@Override
     protected boolean requireFullClient() {
         return true;
     }

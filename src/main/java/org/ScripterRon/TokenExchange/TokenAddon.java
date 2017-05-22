@@ -135,6 +135,8 @@ public class TokenAddon implements AddOn, Listener<Block> {
             if (nrsVersion.length != MIN_VERSION.length) {
                 throw new IllegalArgumentException("NRS version " + Nxt.VERSION + " is too short");
             }
+            // DISABLE NXT VERSION CHECK.
+/*
             for (int i=0; i<nrsVersion.length; i++) {
                 int v = Integer.valueOf(nrsVersion[i]);
                 if (v > MIN_VERSION[i]) {
@@ -144,6 +146,7 @@ public class TokenAddon implements AddOn, Listener<Block> {
                     throw new IllegalArgumentException("NRS version " + Nxt.VERSION + " is not supported");
                 }
             }
+*/
             //
             // Process the token-exchange.properties configuration file
             //
